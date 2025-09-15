@@ -1,0 +1,28 @@
+{
+  "name": "web3-voting-system",
+  "version": "1.0.0",
+  "description": "A decentralized voting system built with React and Solidity",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run frontend\" \"npm run backend\"",
+    "frontend": "cd frontend && npm start",
+    "backend": "cd backend && npx hardhat node",
+    "deploy": "cd backend && npx hardhat run scripts/deploy.js --network localhost",
+    "test": "cd backend && npx hardhat test",
+    "compile": "cd backend && npx hardhat compile"
+  },
+  "keywords": [
+    "blockchain",
+    "voting",
+    "web3",
+    "ethereum",
+    "react",
+    "solidity"
+  ],
+  "author": "Web3 Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
+
